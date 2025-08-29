@@ -705,6 +705,8 @@ export const tPresetSchema = tConversationSchema
       defaultPreset: z.boolean().optional(),
       order: z.number().optional(),
       endpoint: extendedModelEndpointSchema.nullable(),
+      /** Comma-separated MCP server names */
+      mcp: z.string().optional(),
     }),
   );
 
